@@ -16,7 +16,7 @@ function Cart(props) {
 
     const cartCtx = useContext(CartContext);
 
-    const totalAmount = `$ ${cartCtx.totalAmount.toFixed(2)}`;
+    const totalAmount = `₹ ${cartCtx.totalAmount.toFixed(2)}`;
     const cartHasItems = cartCtx.items.length > 0; //checks if cart has any items
 
     const cartItemRemoveHandler = id => {
